@@ -1,10 +1,10 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-  import { defineConfig } from 'vite';
-  import react from '@vitejs/plugin-react-swc';
-  import path from 'path';
-
-  export default defineConfig({
-    plugins: [react()],
+export default defineConfig({
+  base: '/passiton_colloquium/',   // 👈 GitHub repo 이름
+  plugins: [react()],
+})
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
